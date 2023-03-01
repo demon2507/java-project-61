@@ -9,8 +9,9 @@ public class App {
         System.out.println("0 - Exit");
         String numberOfGame = choice.next();
         System.out.println("Your choice: " + numberOfGame);
-        System.out.print("Welcome to the Brain Games!");
+        System.out.println("Welcome to the Brain Games!");
         Cli.askingNameUser();
+        Check.checkNumber();
     }
 }
 
