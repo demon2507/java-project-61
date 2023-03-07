@@ -7,8 +7,9 @@ public class App {
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
         System.out.println("0 - Exit");
+        System.out.print("Your choice: ");
         String numberOfGame = choice.next();
-        System.out.println("Your choice: " + numberOfGame);
+        System.out.print("\n");
         switch(numberOfGame) {
             case "0":
                 System.exit(0);
@@ -19,8 +20,8 @@ public class App {
                 break;
             case "2":
                 System.out.println("Welcome to the Brain Games!");
-                Cli.askingNameUser();
                 IsEven.checkNumber();
+            break;
         }
     }
 }
