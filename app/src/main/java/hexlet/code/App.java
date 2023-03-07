@@ -20,7 +20,7 @@ public class App {
             case "2":
                 System.out.println("Welcome to the Brain Games!");
                 Cli.askingNameUser();
-                Check.checkNumber();
+                IsEven.checkNumber();
         }
     }
 }

@@ -1,7 +1,7 @@
 package hexlet.code;
 import java.util.Scanner;
 
-public class Check {
+public class IsEven {
     public static void checkNumber() {
         String correctAnswer = "Correct!";
         int firstNumber = 0; // Начальное значение диапазона - "от"
