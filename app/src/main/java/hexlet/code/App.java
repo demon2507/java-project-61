@@ -16,14 +16,14 @@ public class App {
                 System.exit(0);
                 break;
             case "1":
-                System.out.println("Welcome to the Brain Games!");
                 Cli.askingNameUser();
                 break;
             case "2":
-                System.out.println("Welcome to the Brain Games!");
+                Cli.askingNameUser();
                 IsEven.checkNumber();
             break;
             case "3":
+                Cli.askingNameUser();
                 Calc.calculator();
                 break;
         }
