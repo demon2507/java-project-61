@@ -13,12 +13,12 @@ public class Calc {
         for(int i = 0; i < 3; i++) {
             int firstRandomNum = firstNumber + (int) (Math.random() * lastNumber);
             int secondRandomNum = firstNumber + (int) (Math.random() * lastNumber);
-            int numOfOperator = 0 + (int) (Math.random() * 2);
+            int numOfOperator = (int) (Math.random() * 2);
             int resultOfExpression = firstRandomNum + secondRandomNum;
             System.out.print("Question: " + firstRandomNum + operators[numOfOperator] + secondRandomNum + "\n");
             System.out.print("Your answer: ");
             String answer = user.next();
-            int userAnswer = Integer.valueOf(answer);
+            int userAnswer = Integer.parseInt(answer);
             if(userAnswer == resultOfExpression) {
                 System.out.println(correctAnswer);
             } else { System.out.println("'" + answer +  "'" + " is wrong answer ;(. Correct answer was " + "'" + resultOfExpression + "'" + "\n" + "Let`s try again, " + nameUser + "!");
