@@ -14,7 +14,18 @@ public class Calc {
             int firstRandomNum = firstNumber + (int) (Math.random() * lastNumber);
             int secondRandomNum = firstNumber + (int) (Math.random() * lastNumber);
             int numOfOperator = (int) (Math.random() * 2);
-            int resultOfExpression = firstRandomNum + secondRandomNum;
+            int resultOfExpression = 0;
+            switch (operators[numOfOperator]){
+                case "+":
+                    resultOfExpression = firstRandomNum + secondRandomNum;
+                    break;
+                case "-":
+                    resultOfExpression = firstRandomNum -secondRandomNum;
+                    break;
+                case "*":
+                    resultOfExpression = firstRandomNum * secondRandomNum;
+                    break;
+            }
             System.out.print("Question: " + firstRandomNum + operators[numOfOperator] + secondRandomNum + "\n");
             System.out.print("Your answer: ");
             String answer = user.next();
