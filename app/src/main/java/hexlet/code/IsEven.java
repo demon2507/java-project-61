@@ -8,7 +8,6 @@ public class IsEven {
         int firstNumber = 0; // Начальное значение диапазона - "от"
         int lastNumber = 100; // Конечное значение диапазона - "до"
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
-            for(int i = 0; i < 3; i++) {
             int randomNum = firstNumber + (int) (Math.random() * lastNumber);
             String isEvenRandomNum = randomNum % 2 == 0 ? "yes" : "no";
             System.out.print("Question: " + randomNum + "\n");
@@ -16,13 +15,11 @@ public class IsEven {
             String answer = user.next();
             if(answer.equals(isEvenRandomNum)) {
                 System.out.println(correctAnswer);
-                } else { System.out.println("'" + answer +  "'" + " is wrong answer ;(. Correct answer was " + "'" + isEvenRandomNum + "'" + "\n" + "Let`s try again, " + nameOfUser + "!");
-                    System.exit(0);
+                } else {
+                System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'" + isEvenRandomNum + "'" + "\n" + "Let`s try again, " + nameOfUser + "!");
+                System.exit(0);
 
-                }
             }
-         System.out.print("Congratulations, " + nameOfUser + "!");
-
     }
 }
 

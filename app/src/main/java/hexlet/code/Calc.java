@@ -4,17 +4,15 @@ public class Calc {
     public static String nameUser = Cli.nameUser;
     public static void calculator() {
         Scanner user = new Scanner(System.in);
-        System.out.println("Hello, " + nameUser + "!");
         String correctAnswer = "Correct!";
         String[] operators = {"+", "-", "*"};
+        int numOfOperator = (int) (Math.random() * 2);
+        int resultOfExpression = 0;
         int firstNumber = 0;
         int lastNumber = 100;
+        int firstRandomNum = firstNumber + (int) (Math.random() * lastNumber);
+        int secondRandomNum = firstNumber + (int) (Math.random() * lastNumber);
         System.out.println("What is the result of the expression?");
-        for(int i = 0; i < 3; i++) {
-            int firstRandomNum = firstNumber + (int) (Math.random() * lastNumber);
-            int secondRandomNum = firstNumber + (int) (Math.random() * lastNumber);
-            int numOfOperator = (int) (Math.random() * 2);
-            int resultOfExpression = 0;
             switch (operators[numOfOperator]){
                 case "+":
                     resultOfExpression = firstRandomNum + secondRandomNum;
@@ -36,9 +34,6 @@ public class Calc {
                 System.exit(0);
 
             }
-        }
-        System.out.print("Congratulations, " + nameUser + "!");
-
     }
 
 }

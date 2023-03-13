@@ -19,7 +19,6 @@ public class GCD {
         int firstNumber = 0;
         int lastNumber = 100;
         System.out.println("What is the result of the expression?");
-        for(int i = 0; i < 3; i++) {
             int firstRandomNum = firstNumber + (int) (Math.random() * lastNumber);
             int secondRandomNum = firstNumber + (int) (Math.random() * lastNumber);
             int nod = gcd_3(firstRandomNum, secondRandomNum);
@@ -33,10 +32,6 @@ public class GCD {
                 System.exit(0);
 
             }
-        }
-        System.out.print("Congratulations, " + nameUser + "!");
-
-
     }
 }
 

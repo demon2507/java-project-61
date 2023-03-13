@@ -7,6 +7,7 @@ public class App {
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
+        System.out.println("4 - GCD");
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
         String numberOfGame = choice.next();
@@ -16,16 +17,17 @@ public class App {
                 System.exit(0);
                 break;
             case "1":
-                Cli.askingNameUser();
+                Engine.engine("1");
                 break;
             case "2":
-                Cli.askingNameUser();
-                IsEven.checkNumber();
+               Engine.engine("2");
             break;
             case "3":
-                Cli.askingNameUser();
-                Calc.calculator();
+                Engine.engine("3");
                 break;
+            case "4":
+              Engine.engine("4");
+
         }
     }
 }
