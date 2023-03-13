@@ -17,7 +17,7 @@ public class App {
                 System.exit(0);
                 break;
             case "1":
-                Engine.engine("1");
+                Cli.askingNameUser();
                 break;
             case "2":
                Engine.engine("2");

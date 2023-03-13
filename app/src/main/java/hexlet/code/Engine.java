@@ -12,23 +12,20 @@ public class Engine{
     public static void engine(String choiceOfGame) {
         String nameOfUser = greeting();
         switch (choiceOfGame) {
-            case "1":
-                System.exit(0);
-                break;
             case "2":
-                IsEven.checkNumber();
-                IsEven.checkNumber();
-                IsEven.checkNumber();
+                IsEven.checkNumber(nameOfUser);
+                IsEven.checkNumber(nameOfUser);
+                IsEven.checkNumber(nameOfUser);
                 break;
             case "3":
-                Calc.calculator();
-                Calc.calculator();
-                Calc.calculator();
+                Calc.calculator(nameOfUser);
+                Calc.calculator(nameOfUser);
+                Calc.calculator(nameOfUser);
                 break;
             case "4":
-                GCD.gcd();
-                GCD.gcd();
-                GCD.gcd();
+                GCD.gcd(nameOfUser);
+                GCD.gcd(nameOfUser);
+                GCD.gcd(nameOfUser);
                 break;
         }
          System.out.print("Congratulations, " + nameOfUser + "!");

@@ -2,7 +2,6 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class GCD {
-    public static String nameUser = Cli.nameUser;
     public static int gcd_3(int a, int b) {
         while (a != b) {
             if (a > b) {
@@ -13,7 +12,7 @@ public class GCD {
         }
         return a;
     }
-    public static void gcd() {
+    public static void gcd(String nameUser) {
         Scanner user = new Scanner(System.in);
         String correctAnswer = "Correct!";
         int firstNumber = 0;

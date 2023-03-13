@@ -2,7 +2,7 @@ package hexlet.code;
 import java.util.Scanner;
 public class IsEven {
      public  static String nameOfUser = Cli.nameUser;
-    public static void checkNumber() {
+    public static void checkNumber(String nameOfUser) {
         String correctAnswer = "Correct!";
         Scanner user = new Scanner(System.in);
         int firstNumber = 0; // Начальное значение диапазона - "от"

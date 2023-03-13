@@ -1,8 +1,7 @@
 package hexlet.code;
 import java.util.Scanner;
 public class Calc {
-    public static String nameUser = Cli.nameUser;
-    public static void calculator() {
+    public static void calculator(String nameUser) {
         Scanner user = new Scanner(System.in);
         String correctAnswer = "Correct!";
         String[] operators = {"+", "-", "*"};
